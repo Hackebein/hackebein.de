@@ -1,0 +1,60 @@
+[root@hackebein ~]# cat /etc/motd
+ _______ _     _       _       _    _            _        _          _       
+|__   __| |   (_)     (_)     | |  | |          | |      | |        (_)      
+   | |  | |__  _ ___   _ ___  | |__| | __ _  ___| | _____| |__   ___ _ _ __  
+   | |  | '_ \| / __| | / __| |  __  |/ _` |/ __| |/ / _ \ '_ \ / _ \ | '_ \ 
+   | |  | | | | \__ \ | \__ \ | |  | | (_| | (__|   <  __/ |_) |  __/ | | | |
+   |_|  |_| |_|_|___/ |_|___/ |_|  |_|\__,_|\___|_|\_\___|_.__/ \___|_|_| |_|
+
+[root@hackebein ~]# whoami
+Hi, I'm Lars (nickname Hackebein)
+
+[root@hackebein ~]# whereis hackebein
+hackebein: /universe/observable_universe/laniakea_supercluster/virgo_supercluster/local_sheet/local_group/milky_way_subgroup/milky_way/orion_arm/gould_belt/local_bubble/local_interstellar_cloud/solar_system/earth/europe/germany/alfter/
+
+[root@hackebein ~]# last -n1
+root   pts/0   127.0.0.1   Sat Nov 28 00:00 - 23:59
+
+wtmp begins Thu Nov 28 1991
+
+[root@hackebein ~]# cat .aliases
+discord:  Hackebein#15222                  # https://discord.com/users/146372237199540246
+email:    hackebein@gmail.com              # 
+github:   Hackebein                        # https://github.com/Hackebein
+steam:    Hackebein                        # https://s.team/u/hackebein
+telegram: Hackebein                        # https://t.me/Hackebein
+twitch:   Hackebein                        # https://twitch.tv/Hackebein
+twitter:  Hackebein                        # https://twitter.com/Hackebein
+vrchat:   Hackebein                        # https://vrchat.com/home/user/usr_40be82e7-f7d5-4548-b314-3fc7b26d22ee
+xing:     Lars Olzem                       # https://www.xing.com/profile/Lars_Olzem
+
+[root@hackebein ~]# readlink /etc/localtime
+/usr/share/zoneinfo/Europe/Berlin
+
+[root@hackebein ~]# cat /etc/locale.gen
+en_US.UTF-8 UTF-8
+de_DE.UTF-8 UTF-8
+
+[root@hackebein ~]# gpg --import <(curl -sL https://hackebein.de/gpg.asc); gpg -k
+pub   rsa4096 2016-06-23 [SC]
+      DE6816258EC5006571413536358CF5698DDD556E
+uid           [ultimate] Lars Olzem <hackebein@gmail.com>
+sub   rsa4096 2016-06-23 [E]
+
+[root@hackebein ~]# ls -l projects_and_contributions | tail -4
+lrwxrwxrwx 1 root root 31 Jan  1  1970 'DoKomi' -> https://www.dokomi.de
+lrwxrwxrwx 1 root root 31 Jan  1  1970 'International Satisfyer Shop' -> https://www.satisfyer.com
+lrwxrwxrwx 1 root root 25 Jan  1  1970 'Telekom Germany Shop' -> https://shop.telekom.de
+lrwxrwxrwx 1 root root 15 Jan  1  1970 'Telekom Germany MDM' -> https://mdm.telekom.net
+
+[root@hackebein ~]# curl -s https://hub.docker.com/v2/repositories/hackebein/ | jq -r '.results | sort_by(.name) | .[] | .namespace + "/" + .name + "\t" + .description' | column -ts$'\t'
+hackebein/alliedmods-json
+hackebein/csgo                              Counter-Strike: Global Offensive for Docker
+hackebein/docker-compose-builder-ts3server  Builds a docker compose file for hackebein/ts3server
+hackebein/garrysmod                         Garry's Mod for Docker
+hackebein/srcds                             Source Dedicated Server for Docker
+hackebein/steamcmd                          SteamCMD based on ubuntu package for xenial, bionic or cosmic.
+hackebein/ts3server                         TeamSpeak 3 Server for Docker
+
+[root@hackebein ~]# file <(curl -sL https://hackebein.de)
+hackebein.de: ASCII text
