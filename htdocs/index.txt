@@ -18,7 +18,7 @@ root   pts/0   127.0.0.1   Sat Nov 28 00:00 - 23:59
 wtmp begins Thu Nov 28 1991
 
 [root@hackebein ~]# cat .aliases
-discord:  Hackebein#15222                  # https://discord.com/users/146372237199540246
+discord:  Hackebein#1522                   # https://discord.com/users/146372237199540246
 email:    hackebein@gmail.com              # 
 github:   Hackebein                        # https://github.com/Hackebein
 steam:    Hackebein                        # https://s.team/u/hackebein
