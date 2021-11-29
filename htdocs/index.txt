@@ -50,9 +50,10 @@ lrwxrwxrwx 1 root root 15 Jan  1  1970 'Telekom Germany MDM' -> https://mdm.tele
 [root@hackebein ~]# curl -s https://hub.docker.com/v2/repositories/hackebein/ | jq -r '.results | sort_by(.name) | .[] | .namespace + "/" + .name + "\t" + .description' | column -ts$'\t'
 hackebein/alliedmods-json                   Builds a JSON file of alliedmods releases
 hackebein/csgo                              Counter-Strike: Global Offensive for Docker
-hackebein/docker-compose-builder-ts3server  Builds a docker compose file for hackebein/ts3server
+hackebein/docker-compose-builder-ts3server  Builds a docker compose file of every public TeamSpeak3 Server build
 hackebein/garrysmod                         Garry's Mod for Docker
 hackebein/hackebein.de                      Personal Homepage
+hackebein/risenrp.life-ts3bot               Small TeamSpeak Bot for risenrp.life
 hackebein/srcds                             Source Dedicated Server for Docker
 hackebein/steamcmd                          SteamCMD based on ubuntu package for xenial, bionic or cosmic.
 hackebein/ts3server                         TeamSpeak 3 Server for Docker
