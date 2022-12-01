@@ -13,12 +13,12 @@ Hi, I'm Lars (nickname Hackebein)
 hackebein: /universe/observable_universe/laniakea_supercluster/virgo_supercluster/local_sheet/local_group/milky_way_subgroup/milky_way/orion_arm/gould_belt/local_bubble/local_interstellar_cloud/solar_system/earth/europe/germany/alfter/
 
 [root@hackebein ~]# last -n1
-root   pts/0   127.0.0.1   Sun Nov 28 00:00 - 23:59
+root   pts/0   127.0.0.1   Mon Nov 28 00:00 - 23:59
 
 wtmp begins Thu Nov 28 1991
 
 [root@hackebein ~]# cat .aliases
-discord:  Hackebein#1522                   # https://discord.com/users/146372237199540246
+discord:  Hackebein#9999                   # https://discord.com/users/146372237199540246
 email:    hackebein@gmail.com              # 
 github:   Hackebein                        # https://github.com/Hackebein
 mastodon: @hackebein@mas.to                # https://mas.to/@hackebein
