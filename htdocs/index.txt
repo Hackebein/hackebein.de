@@ -18,7 +18,7 @@ root   pts/0   127.0.0.1   Mon Nov 28 00:00 - 23:59
 wtmp begins Thu Nov 28 1991
 
 [root@hackebein ~]# cat .aliases
-discord:  Hackebein#9999                   # https://discord.com/users/146372237199540246
+discord:  Hackebein                        # https://discord.com/users/146372237199540246
 email:    hackebein@gmail.com              # 
 github:   Hackebein                        # https://github.com/Hackebein
 mastodon: @hackebein@mas.to                # https://mas.to/@hackebein
@@ -42,11 +42,12 @@ pub   rsa4096 2016-06-23 [SC]
 uid           [ultimate] Lars Olzem <hackebein@gmail.com>
 sub   rsa4096 2016-06-23 [E]
 
-[root@hackebein ~]# ls -l projects_and_contributions | tail -4
-lrwxrwxrwx 1 root root 31 Jan  1  1970 'DoKomi' -> https://www.dokomi.de
-lrwxrwxrwx 1 root root 31 Jan  1  1970 'International Satisfyer Shop' -> https://www.satisfyer.com
-lrwxrwxrwx 1 root root 25 Jan  1  1970 'Telekom Germany Shop' -> https://shop.telekom.de
-lrwxrwxrwx 1 root root 15 Jan  1  1970 'Telekom Germany MDM' -> https://mdm.telekom.net
+[root@hackebein ~]# ls -l projects_and_contributions | tail -5
+lrwxrwxrwx 1 root root 4 Jan  21  1970 'DoKomi' -> https://www.dokomi.de
+lrwxrwxrwx 1 root root 4 Jan  19  1970 'International Igus Shop' -> https://www.igus.eu
+lrwxrwxrwx 1 root root 4 Jan  25  1970 'International Satisfyer Shop' -> https://www.satisfyer.com
+lrwxrwxrwx 1 root root 4 Jan  23  1970 'Telekom Germany Shop' -> https://shop.telekom.de
+lrwxrwxrwx 1 root root 4 Jan  23  1970 'Telekom Germany MDM' -> https://mdm.telekom.net
 
 [root@hackebein ~]# curl -s https://hub.docker.com/v2/repositories/hackebein/ | jq -r '.results | sort_by(.name) | .[] | .namespace + "/" + .name + "\t" + .description' | column -ts$'\t'
 hackebein/alliedmods-json                   Builds a JSON file of alliedmods releases
